@@ -1,0 +1,83 @@
+version = 1
+requires-python = ">=3.9"
+
+[[package]]
+name = "bech32"
+version = "1.2.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/ab/fe/b67ac9b123e25a3c1b8fc3f3c92648804516ab44215adb165284e024c43f/bech32-1.2.0.tar.gz", hash = "sha256:7d6db8214603bd7871fcfa6c0826ef68b85b0abd90fa21c285a9c5e21d2bd899", size = 3695 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b6/41/7022a226e5a6ac7091a95ba36bad057012ab7330b9894ad4e14e31d0b858/bech32-1.2.0-py3-none-any.whl", hash = "sha256:990dc8e5a5e4feabbdf55207b5315fdd9b73db40be294a19b3752cde9e79d981", size = 4587 },
+]
+
+[[package]]
+name = "cosmos-key-from-seed"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "cosmospy" },
+    { name = "mnemonic" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "cosmospy", specifier = ">=6.0.0" },
+    { name = "mnemonic", specifier = ">=0.21" },
+]
+
+[[package]]
+name = "cosmospy"
+version = "6.0.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "bech32" },
+    { name = "ecdsa" },
+    { name = "hdwallets" },
+    { name = "mnemonic" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/a6/e1/e46e2afc36da365d671de88c68ed637da1c2aa3c38dde848ce72c408ae40/cosmospy-6.0.0.tar.gz", hash = "sha256:a2b1afce7414eaca527aff4e2aa113e7752101ac7849ef16707269a67e4e7478", size = 7562 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/06/12/50e85e6ac13dc03085f6cc1037904ca2cb8c33ac67169c336360f5e21ba5/cosmospy-6.0.0-py3-none-any.whl", hash = "sha256:4d521adc8849e695a27b53499ce11f4ed8588748dc2455c563a6801184bade58", size = 7154 },
+]
+
+[[package]]
+name = "ecdsa"
+version = "0.19.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "six" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/5e/d0/ec8ac1de7accdcf18cfe468653ef00afd2f609faf67c423efbd02491051b/ecdsa-0.19.0.tar.gz", hash = "sha256:60eaad1199659900dd0af521ed462b793bbdf867432b3948e87416ae4caf6bf8", size = 197791 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/00/e7/ed3243b30d1bec41675b6394a1daae46349dc2b855cb83be846a5a918238/ecdsa-0.19.0-py2.py3-none-any.whl", hash = "sha256:2cea9b88407fdac7bbeca0833b189e4c9c53f2ef1e1eaa29f6224dbc809b707a", size = 149266 },
+]
+
+[[package]]
+name = "hdwallets"
+version = "0.1.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "ecdsa" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/fd/29/3bc233a31c4ad135c83fc6a247e092571848b91eb052b31d04ecafdc85f3/hdwallets-0.1.2.tar.gz", hash = "sha256:c85d08b59c3fd3bc5b29398583d7d7dc46f95456f69ff15a3ab0353084ee7529", size = 10386 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/00/59/a32262d70fbd013451c308d488aaa03d2d28cd693f18e7565e9010c5f7a9/hdwallets-0.1.2-py3-none-any.whl", hash = "sha256:455b55b061f2b356a93e305b0c2263a6007d2ed45e48749975f09308499a2fdb", size = 8589 },
+]
+
+[[package]]
+name = "mnemonic"
+version = "0.21"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/ff/77/e6232ed59fbd7b90208bb8d4f89ed5aabcf30a524bc2fb8f0dafbe8e7df9/mnemonic-0.21.tar.gz", hash = "sha256:1fe496356820984f45559b1540c80ff10de448368929b9c60a2b55744cc88acf", size = 152462 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/57/48/5abb16ce7f9d97b728e6b97c704ceaa614362e0847651f379ed0511942a0/mnemonic-0.21-py3-none-any.whl", hash = "sha256:72dc9de16ec5ef47287237b9b6943da11647a03fe7cf1f139fc3d7c4a7439288", size = 92701 },
+]
+
+[[package]]
+name = "six"
+version = "1.17.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/94/e7/b2c673351809dca68a0e064b6af791aa332cf192da575fd474ed7d6f16a2/six-1.17.0.tar.gz", hash = "sha256:ff70335d468e7eb6ec65b95b99d3a2836546063f63acc5171de367e834932a81", size = 34031 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl", hash = "sha256:4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274", size = 11050 },
+]

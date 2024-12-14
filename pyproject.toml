@@ -1,0 +1,10 @@
+[project]
+name = "cosmos-key-from-seed"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "cosmospy>=6.0.0",
+    "mnemonic>=0.21",
+]
